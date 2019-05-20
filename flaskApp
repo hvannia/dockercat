@@ -1,0 +1,13 @@
+create 
+    app.py
+    requirements.txt
+    templates
+    Dockerfile
+
+
+$ docker build -t vanniadock/dailycatapp .
+Successfully built 26abe4cb9a32
+Successfully tagged vanniadock/dailycatapp:latest
+
+$docker run -p 8888:5000 --name dailycatapp vanniadock/dailycatapp
+$ docker push vanniadock/dailycatapp
